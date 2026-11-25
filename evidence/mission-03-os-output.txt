@@ -1,0 +1,38 @@
+$ uname -a  (hostname removed)
+Darwin 27.2.0 arm64
+$ sw_vers
+ProductName:		macOS
+ProductVersion:		27.2.1
+BuildVersion:		26B131
+$ whoami
+[redacted]
+$ df -h /
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi   197Gi     7%    487k  2.1G    0%   /
+$ top -l 1 -n 5 -o cpu -stats pid,command,cpu,mem  (snapshot)
+Processes: 579 total, 3 running, 576 sleeping, 3963 threads 
+2026/11/25 22:08:40
+Load Avg: 2.96, 2.88, 2.55 
+CPU usage: 11.15% user, 14.23% sys, 74.61% idle 
+PID    COMMAND %CPU MEM  
+99471  sed     0.0  1040K
+99470  top     0.0  4528K
+99446  zsh     0.0  1696K
+99280  curl    0.0  4240K
+99241  bash    0.0  2672K
+
+$ ps -ax -o pid,comm | grep -E "launchd|Finder|Dock|WindowServer|Safari$|TextEdit"
+    1  launchd
+  610  WindowServer
+ 1302  Dock
+ 1304  Finder
+
+--- Task 3.3 paths ---
+$ pwd
+/Users/[redacted]/.../digital-detective-8510
+$ cd mission-02-terminal/terminal-practice && pwd
+/Users/[redacted]/.../digital-detective-8510/mission-02-terminal/terminal-practice
+$ cd ../.. && pwd
+/Users/[redacted]/.../digital-detective-8510
+$ ls -l mission-02-terminal/terminal-practice/clue.txt
+-rw-r--r--@ 1 [redacted]  staff  85 Nov 25 22:07 mission-02-terminal/terminal-practice/clue.txt
