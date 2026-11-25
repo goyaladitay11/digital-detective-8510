@@ -26,3 +26,7 @@ was completed, documented, committed and pushed separately before starting the n
 Privacy-safe evidence (selected outputs) is kept in [`evidence/`](evidence/).
 
 > No passwords, tokens, usernames, device names or private network details are stored in this repository.
+## My Learning
+- The Terminal can do everything the file manager does, and `pwd` + `ls` help me check where I am before changing anything.
+- Every program I open becomes a process with a PID, and the operating system shares the CPU and memory between hundreds of them.
+- Numbers and text are all stored as bits — binary, hex and encodings like UTF-8 are just different ways of writing them.
