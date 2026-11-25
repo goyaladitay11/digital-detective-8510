@@ -1,0 +1,2 @@
+Line 1: The Digital Detective starts here.
+Line 2: Appended without deleting line 1.

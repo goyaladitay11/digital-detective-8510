@@ -1,0 +1,63 @@
+$ pwd
+/Users/[redacted]/.../digital-detective-8510/mission-02-terminal
+$ ls
+README.md
+$ cd ..  &&  pwd
+/Users/[redacted]/.../digital-detective-8510
+$ mkdir practice-folder
+$ touch practice-folder/notes.txt
+$ cp practice-folder/notes.txt practice-folder/notes-copy.txt
+$ mv practice-folder/notes-copy.txt practice-folder/renamed-copy.txt
+$ ls practice-folder
+notes.txt
+renamed-copy.txt
+$ cat practice-folder/notes.txt   (empty file, so nothing printed)
+
+--- Task 2.2 ---
+$ echo "Line 1: The Digital Detective starts here." > clue.txt
+$ echo "Line 2: Appended without deleting line 1." >> clue.txt
+$ cat clue.txt
+Line 1: The Digital Detective starts here.
+Line 2: Appended without deleting line 1.
+$ cp clue.txt clue-backup.txt
+$ mv clue-backup.txt clue-backup-renamed.txt
+$ ls -l
+total 16
+-rw-r--r--@ 1 [redacted]  staff  85 Nov 25 22:07 clue-backup-renamed.txt
+-rw-r--r--@ 1 [redacted]  staff  85 Nov 25 22:07 clue.txt
+
+--- Task 2.3 ---
+$ ls
+README.md
+practice-folder
+terminal-practice
+$ ls -lah
+total 8
+drwxr-xr-x@  5 [redacted]  staff   160B Nov 25 22:07 .
+drwxr-xr-x@ 14 [redacted]  staff   448B Nov 25 22:07 ..
+-rw-r--r--@  1 [redacted]  staff    92B Nov 25 22:06 README.md
+drwxr-xr-x@  4 [redacted]  staff   128B Nov 25 22:07 practice-folder
+drwxr-xr-x@  4 [redacted]  staff   128B Nov 25 22:07 terminal-practice
+$ ls -lah | head -5
+total 8
+drwxr-xr-x@  5 [redacted]  staff   160B Nov 25 22:07 .
+drwxr-xr-x@ 14 [redacted]  staff   448B Nov 25 22:07 ..
+-rw-r--r--@  1 [redacted]  staff    92B Nov 25 22:06 README.md
+drwxr-xr-x@  4 [redacted]  staff   128B Nov 25 22:07 practice-folder
+
+--- Task 2.4 ---
+$ brew --version
+Homebrew 7.0.16
+$ brew list | head -10
+aarch64-elf-binutils
+aarch64-elf-gcc
+abseil
+ada-url
+brotli
+c-ares
+ca-certificates
+cairo
+capstone
+coreutils
+$ brew list | wc -l
+     109
