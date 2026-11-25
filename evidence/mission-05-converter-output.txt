@@ -1,0 +1,23 @@
+$ python3 number_converter.py   (typed: 13)
+Enter a decimal number: Decimal:     13
+Binary:      0b1101  (without prefix: 1101)
+Hexadecimal: 0xd  (without prefix: D)
+
+$ python3 number_converter.py   (typed: 25)
+Enter a decimal number: Decimal:     25
+Binary:      0b11001  (without prefix: 11001)
+Hexadecimal: 0x19  (without prefix: 19)
+
+$ python3 number_converter.py   (typed: 255)
+Enter a decimal number: Decimal:     255
+Binary:      0b11111111  (without prefix: 11111111)
+Hexadecimal: 0xff  (without prefix: FF)
+
+$ python3 number_converter.py   (typed: 2026)
+Enter a decimal number: Decimal:     2026
+Binary:      0b11111101010  (without prefix: 11111101010)
+Hexadecimal: 0x7ea  (without prefix: 7EA)
+
+$ python3 number_converter.py   (typed: abc)
+Enter a decimal number: That is not a whole number. Please enter digits like 13 or 255.
+
